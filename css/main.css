@@ -12,10 +12,12 @@ html {
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
-  position: relative;
-  transform: rotate(10deg);
+  position: absolute;
+  transform: rotate(5deg);
   z-index: 4;
-  left: 20%;
+  left: 30%;
+  top: 150px;
+  transition: ease-out 120ms;
 }
 
 .polaroid > img {
@@ -36,19 +38,20 @@ html {
 .polaroid:hover {
   transform: rotate(0deg);
   z-index: 5;
+  transition: ease-out 200ms;
+  box-shadow: 2px 6px 8px rgba(0, 0, 0, 1);
 }
-
 
 figure:first-of-type {
   transform: rotate(-12deg);
-  left: 15%;
+  left: 20%;
   top: 100px;
   z-index: 2;
 }
 
 figure:last-of-type {
-  transform: rotate(40deg);
+  transform: rotate(33deg);
   z-index: 3;
-  left: 25%;
-  bottom: 200px;
+  left: 40%;
+  top: 100px;
 }
