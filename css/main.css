@@ -13,8 +13,8 @@ html {
   border-radius: 4px;
   box-shadow: 1px 4px 6px rgba(0, 0, 0, .5);
   position: relative;
-  transform: rotate(10deg) scale(2);
-  z-index: 2;
+  transform: rotate(10deg);
+  z-index: 4;
   left: 20%;
 }
 
@@ -28,22 +28,27 @@ html {
   text-shadow: 1px 1px 3px #000;
   position: absolute;
   text-align: center;
+  bottom: 10%;
+  right: 33%;
 
 }
 
 .polaroid:hover {
-  transform: rotate(0deg) scale(2);
-  z-index: 2;
+  transform: rotate(0deg);
+  z-index: 5;
 }
 
 
 figure:first-of-type {
-  transform:rotate(-12deg) scale(2);
-  left: 30%;
-
+  transform: rotate(-12deg);
+  left: 15%;
+  top: 100px;
+  z-index: 2;
 }
 
 figure:last-of-type {
-  transform: rotate(40deg) scale(2);
-  z-index: 1;
+  transform: rotate(40deg);
+  z-index: 3;
+  left: 25%;
+  bottom: 200px;
 }
